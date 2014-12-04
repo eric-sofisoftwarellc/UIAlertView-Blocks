@@ -13,16 +13,16 @@ So the solution presented here is to reimplement the essential concept of RMUniv
 (which uses RIButtonItem to encapsulate each button). This adds UIAlertController+Blocks and a single point of entry SSUniversalAlert.
 
 So now you can say:
-    [SSUniversalAlert showAlertInViewController:viewController
-                                      withTitle:@"Delete this Item?"
-                                        message:@"Are you sure you want to delete this really important thing?"
-                               cancelButtonItem:[RIButtonItem itemWithLabel:@"Yes" action:^{
-                                    // Handle "Cancel"
-                                }]
-                          destructiveButtonItem:[RIButtonItem itemWithLabel:@"Delete" action:^{
-                                    // Handle "Delete"
-                                }]
-                               otherButtonItems:@[<any other items you want>]];
+	[SSUniversalAlert showAlertInViewController:viewController
+	                                  withTitle:@"Delete this Item?"
+	                                    message:@"Are you sure you want to delete this really important thing?"
+	                           cancelButtonItem:[RIButtonItem itemWithLabel:@"Yes" action:^{
+	                                // Handle "Cancel"
+	                            }]
+	                      destructiveButtonItem:[RIButtonItem itemWithLabel:@"Delete" action:^{
+	                                // Handle "Delete"
+	                            }]
+	                           otherButtonItems:@[<any other items you want>]];
 
 Want an action sheet? Just change the method name showAlertInViewController to showActionSheetInViewController.
 
