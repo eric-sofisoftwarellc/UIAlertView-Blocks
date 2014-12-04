@@ -1,7 +1,7 @@
 README
 ======
 
-This is a quickie pair of categories on UIAlertView and UIActionSheet which enables you to use blocks to handle the button selection instead of implementing a delegate.
+This is a quickie set of categories on UIAlertView and UIActionSheet which enables you to use blocks to handle the button selection instead of implementing a delegate. There is also now a category for UIAlertController, and an interface to automatically select whichever is supported by the OS version.
 
 IOS 8 AND UIAlertController
 ---------------------------
